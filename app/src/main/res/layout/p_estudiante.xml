@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#397DC9"
+    tools:context=".P_Estudiante">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="49dp"
+        android:src="@drawable/logo_brainmaster" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:fontFamily="@font/quicksandbold"
+        android:text="Ranking de la partida"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ranking_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/quicksandbold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugador"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/quicksandbold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntos"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/quicksandbold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#54000000"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/lslRanking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ranking_user_static">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/quicksandbold"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/iniciar_s"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/style_bttn"
+        android:fontFamily="@font/quicksandbold"
+        android:text="Salir"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="Salir"/>
+</LinearLayout>

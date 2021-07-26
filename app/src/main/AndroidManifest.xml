@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.brainmaster">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BRAINMASTER"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".P_Principal"></activity>
+        <activity android:name=".P_Estudiante" />
+        <activity android:name=".P_Retroalimentacion" />
+        <activity android:name=".P_Partida" />
+        <activity android:name=".P_IngresoPartida" />
+        <activity android:name=".P_Menu_Principal" />
+        <activity android:name=".P_Bibliografia" />
+        <activity android:name=".P_Ayuda_Principal" />
+        <activity android:name=".P_Recuperar_Contrasena" />
+        <activity android:name=".P_Registro" />
+        <activity android:name=".BRAINMASTER">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".P_Login" />
+    </application>
+
+</manifest>

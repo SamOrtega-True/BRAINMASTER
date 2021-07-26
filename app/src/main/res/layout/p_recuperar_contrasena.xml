@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#397DC9"
+    tools:context=".P_Recuperar_Contrasena">
+
+    <ImageView
+        android:id="@+id/ImgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_arrow_white"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/style_circle1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-180dp"
+        android:layout_marginLeft="-180dp"/>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/style_circle2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-180dp"
+        android:layout_marginTop="-180dp"/>
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="90dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandbold"
+            android:text="Recuperar Contraseña"
+            android:textColor="#FAF7F7"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandbold"
+            android:text="Correo Institucional"
+            android:textColor="#FDFDFD"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/txtcedulaRec"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandbold"
+            android:text="Cédula"
+            android:textColor="#FDFDFD"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/txtcorreoRec"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:paddingLeft="20dp"/>
+
+        <Button
+            android:id="@+id/enviarRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/style_bttn"
+            android:fontFamily="@font/quicksandbold"
+            android:text="Enviar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo_utp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo_fisc"/>
+    </LinearLayout>
+</RelativeLayout>

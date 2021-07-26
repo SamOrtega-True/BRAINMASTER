@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BRAINMASTER</string>
+    <integer name="dbVersion">1</integer>
+</resources>

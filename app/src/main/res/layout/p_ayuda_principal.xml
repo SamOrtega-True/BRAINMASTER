@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".P_Ayuda_Principal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ImgBack"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:src="@drawable/left_arrow_black"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:clickable="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo_brainmaster"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:fontFamily="@font/quicksandbold"
+                    android:text="Preguntas frecuentes"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardElevation="9dp"
+                    card_view:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksandbold"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"
+                        android:text="1.¿Antes de jugar BrainMaster debo tener conocimentos previos al tema Modelo basado en componentes?\n\n - Si, es lo recomendable, ya que este juego educativo esta creado con la finalidad de reforzar dicho tema de forma interactiva y didactica." />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5sp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/black"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardElevation="9dp"
+                    card_view:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksandbold"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"
+                        android:text="2. ¿Es necesario ser estudiante de la Universidad Tecnologíca de Panamá?\n\n- Si, es un requerimiento muy importante, ya que el funcinamiento del manejo de usuario es con el correo institucional." />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5sp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/black"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardElevation="9dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    card_view:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/quicksandbold"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"
+                        android:text="3. ¿Es necesario tener conexion a internet?\n\n- Si, ya que la aplicacion cuenta con funciones que se actualizan mediante internet." />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5sp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/black"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/quicksandbold"
+                    android:textSize="15dp"
+                    android:text="Para mas información o consulta puedes contactarnos mediante el correo 'brain_master01@gmail.com' o dentro del menú del juego puedes ver los videos explicativos sobre cada funcion  mas detalladamemnte."
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
